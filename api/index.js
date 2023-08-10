@@ -2,12 +2,10 @@ const express = require("express");
 const app = express();
 const mongoose = require('mongoose');
 const StudentModel = require("../models/StudentModel");
-const multer = require('multer')
 const fs = require("fs");
 const cors = require("cors");
 const path = require('path');
 require('dotenv').config()
-const { request } = require("https");
 
 
 
@@ -116,7 +114,7 @@ app.get("/api/search", async (request, response) => {
 
 // javeriaakmal457
 // LESGvRaVeKeCWLMu
-mongoose.connect(process.env.DB).then(() => {
+mongoose.connect("mongodb+srv://javeria:LESGvRaVeKeCWLMu@cluster0.uovkiqb.mongodb.net/studentsDbE").then(() => {
 
     // app.listen(process.env.PORT, () => {
     //     console.log("db & server is running");
