@@ -23,7 +23,7 @@ const studentSchema = new Schema({
     image: {
         type: String,
         required: [true, "image is required"],
-        get: linkUrl
+        get: linkurl
     }
 }, {toJSON: {getters: true} } )
 function linkurl(image){
