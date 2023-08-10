@@ -8,6 +8,7 @@ const path = require('path');
 require('dotenv').config()
 
 
+app.use(cors());
 
 
 app.get("/api/students", async (request, response) => {
